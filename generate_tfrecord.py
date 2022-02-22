@@ -15,7 +15,7 @@ from __future__ import absolute_import
 import os
 import io
 import pandas as pd
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
 import sys
 
 sys.path.append("../../models/research")
@@ -131,4 +131,4 @@ def main(_):
 
 
 if __name__ == "__main__":
-    tf.compat.v1.app.run()
+    tf.app.run()
